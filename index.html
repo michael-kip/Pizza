@@ -10,48 +10,62 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+    <header class="nav-bar"></header>
     <section class="makeorder">
         <div class="container">
             <h2>Make your order!</h2>
             <div class="row">
                 <div class="col-sm-12">
                     <form action="">
-                        <label for="pizza flavors">A list of pizza flavors</label>
-                        <select name="" id="">
-                           <option value="bbq chicken">BBQ Chicken</option>
-                           <option value="beef bbq">Beef BBQ</option>
-                           <option value="veggie pizza">Veggie Pizza</option>
-                           <option value="pepperoni pizza">Pepperoni</option>
-                           <option value="hawaiian pizza">Hawaiian Pizza</option>
-                        </select>
-                        <label for="select size">Select Size</label>
-                        <select name="" id="">
-                            <option value="small">Small -- Ksh. 400</option>
-                            <option value="medium">Medium -- Ksh. 600</option>
-                            <option value="large">Large -- Ksh. 800</option>
-                        </select>
-                        <label for="favorite crust">Select Crust</label>
-                        <select name="" id="">
-                            <option value="crispy">Crispy -- Ksh. 100</option>
-                            <option value="stuffed">Stuffed --Ksh. 150</option>
-                            <option value="gluten-free">Glutten-free -- Ksh. 200</option>
-                        </select>
+                        <div class="form-group">
+                            <label for="pizza flavors" >A list of pizza flavors</label>
+                            <select name="" id="flavor">
+                            <option value="bbq chicken" >BBQ Chicken</option>
+                            <option value="beef bbq">Beef BBQ</option>
+                            <option value="veggie pizza">Veggie Pizza</option>
+                            <option value="pepperoni pizza">Pepperoni</option>
+                            <option value="hawaiian pizza">Hawaiian Pizza</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="select size">Select Size</label>
+                            <select name="" id="size">
+                            <option value="400">Small -- Ksh. 400</option>
+                            <option value="600">Medium -- Ksh. 600</option>
+                            <option value="800">Large -- Ksh. 800</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="favorite crust">Select Crust</label>
+                            <select name="" id="crust">
+                            <option value="100">Crispy -- Ksh. 100</option>
+                            <option value="150">Stuffed --Ksh. 150</option>
+                            <option value="200">Glutten-free -- Ksh. 200</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="toppings">
                         <label for="select toppings">Select toppings</label>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="cheese" value="cheese">
+                        <select name="" id="toppings">
+                        <div class="form-check form-check">
+                            <input class="form-check-input" type="checkbox" id="cheese" value="40">
                             <label class="form-check-label" for="cheese">Cheese -- Ksh. 40</label>
                           </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="sausages" value="sausages">
+                          <div class="form-check form-check">
+                            <input class="form-check-input" type="checkbox" id="sausages" value="50">
                             <label class="form-check-label" for="sausages">Sausages -- Ksh. 50</label>
                           </div>
-                          <div class="form-check form-check-inline">
+                          <div class="form-check form-check" id="toppings">
                             <input class="form-check-input" type="checkbox" id="mushrooms" value="mushrooms">
                             <label class="form-check-label" for="mushrooms">Mushrooms -- Ksh. 30</label>
                         </div>
+                        </select>
+                        <div class="form-group">
+                            <input type="number"  class="form-control" id="numberoforders" placeholder="Number of orders">
+                        </div>
+                        <button type="button" class="btn btn-secondary" id="btn">Submit Order</button>
                     </form>
                 </div>
-                <div class="col-sm-12"></div>
+                <div class="col-sm-12" id="totalcostincurred"></div>
             </div>
         </div>
     </section>
