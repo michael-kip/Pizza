@@ -1,0 +1,23 @@
+.intro {
+  background-image: url(../images/pizza9.jpg);
+  background-position: center;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  /* margin-top: 30px; */
+  background-size: cover;
+  justify-content: center;
+}
+
+.intro-content {
+  display: block;
+  padding-top: 210px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.makeorder {
+  background-color: #ff8303;
+  text-align: center;
+  justify-content: center;
+}
