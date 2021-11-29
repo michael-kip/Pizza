@@ -31,16 +31,16 @@ $(document).ready(function(){
        }
        switch(pizzaCrust){
           case "0":
-            crust_price = "0";
+            costOfCrust = "0";
           break;
           case "Crispy":
-            crust_price = 250;
+            costOfCrust = 250;
           break;
           case "Stuffed":
-            crust_price = 200;
+            costOfCrust = 200;
           break;
           case "Gluten-free":
-            crust_price = 300;
+            costOfCrust = 300;
           break;
         }
         let toppingValue = pizzaTopping.length*100;
@@ -49,7 +49,7 @@ $(document).ready(function(){
           alert("Please select pizza size and crust"); 
         }
     
-        total = cost + crust_price + toppingValue;
+        total = cost + costOfCrust + toppingValue;
         let checkoutTotal =0;
         checkoutTotal += total;
     
@@ -82,21 +82,21 @@ $(document).ready(function(){
            }
            switch(pizzaCrust){
               case "0":
-                crust_price = 0;
+                costOfCrust = 0;
               break;
               case "Crispy":
-                crust_price = 250;
+                costOfCrust = 250;
               break;
               case "Stuffed":
-                crust_price = 200;
+                costOfCrust = 200;
               break;
               case "Gluten-free":
-                crust_price = 300;
+                costOfCrust = 300;
               break;
             }
             let toppingValue = pizzaTopping.length*100;
         
-            total = cost + crust_price + toppingValue;
+            total = cost + costOfCrust + toppingValue;
         
             checkoutTotal += total;
 
