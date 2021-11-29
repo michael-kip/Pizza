@@ -121,7 +121,13 @@ $(document).ready(function(){
             //   default:
                 // console.log("No price"); 
             }
-            
+            let toppingValue = pizzaTopping.length*100;
+        // console.log(" value" + toppingValue);
+            total = price + crust_price + toppingValue;
+        // console.log(total);
+
+            checkoutTotal += total;
+
 
 
 
