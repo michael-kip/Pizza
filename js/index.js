@@ -132,7 +132,16 @@ $(document).ready(function(){
 
             $("#ordersmade").html('<tr><td id="pizzaname">'+addpizzaorder.name +'</td><td id="pizzasize">' + addpizzaorder.size + '</td><td id="pizzacrust">'+addpizzaorder.crust + '</td><td id="pizzatopping">'+addpizzaorder.topping+'</td><td id="totalcost">'+addpizzaorder.total+'</td></tr>');
         });
-        
+
+        $("button#checktotals").click(function(){ 
+            // $("button#checkout").hide();
+            // $("button.addPizza").hide();
+            // $("button.deliver").slideDown(1000);
+            // $("#addedprice").slideDown(1000);
+            // ("Your total bills is sh. "+checkoutTotal);
+            $("#pizzatotal").html("Amount is sh. "+checkoutTotal);
+          });
+
 
 
 
