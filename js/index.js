@@ -128,6 +128,8 @@ $(document).ready(function(){
 
             checkoutTotal += total;
 
+            let addpizzaorder = new orderpizza(pizzaName, pizzaSize, pizzaCrust,pizzaTopping,total);
+
 
 
 
