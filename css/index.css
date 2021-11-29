@@ -17,11 +17,12 @@
 }
 
 .makeorder {
-  background-color: #ff8303;
+  background-color: #ffbf00;
   text-align: center;
   justify-content: center;
   padding-top: 15px;
   padding-bottom: 50px;
+  margin-top: 40px;
 }
 
 .newsletter {
