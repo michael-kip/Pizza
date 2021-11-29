@@ -111,7 +111,7 @@ $(document).ready(function(){
 
           $("button.deliver").click(function(){
             let deliveryCharges= checkoutTotal+200;
-            $("#totalbill").html("Your  total bill plus delivery fee is @ksh 200: "+deliveryCharges);
+            $("#totalbill").html("Your  total bill plus delivery fee of @ksh 200: is "+deliveryCharges);
           });
 
           $("button#deliver").click(function(event){
