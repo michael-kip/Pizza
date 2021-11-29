@@ -142,6 +142,19 @@ $(document).ready(function(){
             $("#pizzatotal").html("Amount is sh. "+checkoutTotal);
           });
 
+          $("button.deliver").click(function(){
+            // $(".pizzatable").hide();
+            // $(".choice h2").hide();
+            // $(".delivery").slideDown(1000);
+            // $("#addedprice").hide();
+            // $("button.deliver").hide();
+            // $("#pizzatotal").hide();
+            let deliveryCharges= checkoutTotal+200;
+            // console.log("You will pay a total of . "+deliveryCharges+" on delivery");
+            $("#totalbill").html("Your  total bill plus delivery fee is: "+deliveryCharges);
+          });
+      
+
 
 
 
