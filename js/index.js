@@ -153,6 +153,46 @@ $(document).ready(function(){
             // console.log("You will pay a total of . "+deliveryCharges+" on delivery");
             $("#totalbill").html("Your  total bill plus delivery fee is: "+deliveryCharges);
           });
+
+          $("button#deliver").click(function(event){
+            event.preventDefault();
+      
+            // $("#pizzatotal").hide();
+            // $(".delivery").hide();
+            // $("button#final-order").hide();
+            let deliveryCharges= checkoutTotal+200;
+            // console.log("Final Bill is: "+deliveryCharges);
+            // let person = $("input#name").val();
+            // let phone = $("input#contacts").val();
+            // let location = $("input#location").val();
+    
+            // let person = prompt("Enter your name")
+            // let phone = prompt("Enter your phone number")
+            // let location = prompt("Enter your location")
+      
+            // if ($("input#name").val() && $("input#contacts").val() && $("input#location").val()!=""){
+        
+            //  alert(("Hello ", person+",your order has been received and it will be delivered to you at "+location+ ". Total cost is ksh. "+deliveryCharges));
+            //   $("#totalbill").hide();
+            //   $("#finallmessage").slideDown(1200);
+            // }
+            // else {
+            //   alert("Please fill in the details for delivery!");
+            // //   $(".delivery").show();
+            // //   $("button#final-order").show();
+            // }
+            $(document).on("click","#deliver",function(){
+                let customerLocation = prompt("Enter your location")
+            if(!customerLocation){
+                alert("Please enter your location")
+            }else{
+                alert("Dear customer, your order has been received will be delivered at "+ customerLocation +". Total cost is kshs "+ deliveryCharges )
+            }   
+            });
+          });
+    event.preventDefault();
+    });
+  });
       
 
 
