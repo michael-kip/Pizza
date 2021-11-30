@@ -1,4 +1,4 @@
-# Delani Studio
+# PIZZA HUB
 
 ## Author
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-This is a website for Delani Studio. It has details about the services they offer, what they do and a portfolio for various projects they have worked on.
+This is a web application that enables user to order for pizza online and have an option of home delivery if there is a need.
 
 ## Live Page
 
