@@ -102,7 +102,7 @@ $(document).ready(function(){
 
             let addpizzaorder = new orderpizza(pizzaName, pizzaSize, pizzaCrust,pizzaTopping,total);
 
-            $("#ordersmade").html('<tr><td id="pizzaname">'+addpizzaorder.name +'</td><td id="pizzasize">' + addpizzaorder.size + '</td><td id="pizzacrust">'+addpizzaorder.crust + '</td><td id="pizzatopping">'+addpizzaorder.topping+'</td><td id="totalcost">'+addpizzaorder.total+'</td></tr>');
+            $("#ordersmade").append('<tr><td id="pizzaname">'+addpizzaorder.name +'</td><td id="pizzasize">' + addpizzaorder.size + '</td><td id="pizzacrust">'+addpizzaorder.crust + '</td><td id="pizzatopping">'+addpizzaorder.topping+'</td><td id="totalcost">'+addpizzaorder.total+'</td></tr>');
         });
 
         $("button#checktotals").click(function(){ 
